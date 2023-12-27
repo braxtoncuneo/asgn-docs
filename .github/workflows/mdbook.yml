@@ -31,7 +31,7 @@ jobs:
     env:
       MDBOOK_VERSION: 0.4.21
     steps:
-            
+
       - uses: actions/checkout@v4
       - name: Set up Python 3.x
         uses: actions/setup-python@v4
@@ -57,19 +57,19 @@ jobs:
       - name: Install mdBook
         run: |
           cargo install mdbook
-      - name: Install mdbook-admonish
-        run: |
-          cargo install mdbook-admonish
-          mdbook-admonish install
-      - name: Install mdbook-footnote
-        run: |
-          cargo install mdbook-footnote
-      - name: Install mdbook-cmdrun
-        run: |
-          cargo install mdbook-cmdrun
-      - name: Install mdbook-hide
-        run: |
-          cargo install mdbook-hide
+      #- name: Install mdbook-admonish
+      #  run: |
+      #    cargo install mdbook-admonish
+      #    mdbook-admonish install
+      #- name: Install mdbook-footnote
+      #  run: |
+      #    cargo install mdbook-footnote
+      #- name: Install mdbook-cmdrun
+      #  run: |
+      #    cargo install mdbook-cmdrun
+      #- name: Install mdbook-hide
+      #  run: |
+      #    cargo install mdbook-hide
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
